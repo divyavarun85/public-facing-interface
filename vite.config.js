@@ -27,8 +27,7 @@ export default defineConfig({
   },
   // Optimize dependencies
   optimizeDeps: {
-    include: ['maplibre-gl', '@turf/turf', 'vue'],
-    exclude: ['maplibre-gl'] // Let Vite handle it
+    include: ['maplibre-gl', '@turf/turf', 'vue']
   }
 })
 
