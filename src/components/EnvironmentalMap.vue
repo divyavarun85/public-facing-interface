@@ -881,12 +881,21 @@ function handleClearPin() {
     }
 
     .app-header {
-        padding: 12px 16px;
-        padding-left: 60px;
+        padding: 10px 16px;
     }
 
     .app-header__title {
         font-size: 13px;
+    }
+
+    .app-header__subtitle {
+        display: none;
+    }
+
+    .app-header__prototype-badge {
+        font-size: 9px;
+        padding: 2px 6px;
+        letter-spacing: 0.03em;
     }
 
     .logo-wordmark {
@@ -908,8 +917,7 @@ function handleClearPin() {
 
 @media (max-width: 480px) {
     .app-header {
-        padding: 10px 12px;
-        padding-left: 56px;
+        padding: 8px 12px;
     }
 
     .logo-wordmark {

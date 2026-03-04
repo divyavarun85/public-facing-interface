@@ -1,5 +1,5 @@
 <template>
-  <aside class="map-controls">
+  <aside class="map-controls" v-bind="$attrs">
     <header class="panel-header">
       <div class="header-actions">
         <button class="mobile-close-btn" @click="$emit('close-sidebar')" aria-label="Close sidebar">
@@ -125,6 +125,8 @@
 
 <script setup>
 import { ref, computed, watch, nextTick, onMounted, onBeforeUnmount } from 'vue'
+
+defineOptions({ inheritAttrs: false })
 
 const props = defineProps({
   factors: { type: Array, required: true },
