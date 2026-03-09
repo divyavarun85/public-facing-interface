@@ -1,6 +1,6 @@
 <template>
   <EnvironmentalMap
-    :data="`${import.meta.env.BASE_URL}chel2022_wgs84.geojson`"
+    :data="dataUrl"
     :center="[-98.6, 39.8]"
     :zoom="3.4"
     :style="mapStyle"
@@ -10,6 +10,8 @@
 
 <script setup>
 import EnvironmentalMap from './components/EnvironmentalMap.vue'
+
+const dataUrl = import.meta.env.BASE_URL + 'chel2022_wgs84.geojson'
 
 const mapStyle = {
   version: 8,
