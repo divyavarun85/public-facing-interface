@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
+  base: '/public-facing-interface/',
   plugins: [vue()],
   build: {
     // Enable code splitting
