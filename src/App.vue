@@ -1,6 +1,6 @@
 <template>
   <EnvironmentalMap
-    data="/chel2022_wgs84.geojson"
+    :data="`${import.meta.env.BASE_URL}chel2022_wgs84.geojson`"
     :center="[-98.6, 39.8]"
     :zoom="3.4"
     :style="mapStyle"
